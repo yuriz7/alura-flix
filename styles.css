@@ -1,0 +1,80 @@
+/* Para selecionar uma classe, é necessário colocar um ponto seguido do nome da classe
+
+
+'Root' é usado para definir estilos globais de variáveis (variáveis CSS personalizadas) 
+que podem ser acessadas e utilizadas em todo o documento CSS.*/
+
+:root {
+
+    /* Declaração de variáveis de cores*/
+    --branco-principal: #FFFFFF;
+    --cinza-secundario: #C0C0C0;
+    --botao-azul: #167BF7;
+    --cor-de-fundo: #00030C;
+    --fonte-principal: 'Inter';
+}
+
+body {
+    background-color: var(--cor-de-fundo);
+    color: var(--branco-principal);
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.principal {
+    background-image: url("img/Background.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    align-items: center; /* Serve para alinhar os itens dentro de um container / section */
+    text-align: center; /* O text align funciona também para itens e não somente texto */
+}
+
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.container__botao {
+    background-color: var(--botao-azul);
+    border-radius: 5px;
+    padding: 1em;
+    color: var(--branco-principal);
+    display: block;
+    text-decoration: none;
+    margin-bottom: 1em;
+    /*Margim - Para colocar um espacinho entre os coisinhas. 
+    Você deve decidir o lado que quer inserir, seja no top, left, rigth*/
+}
+
+.botao_secundario {
+    background-color: transparent;
+    border: 2px solid var(--branco-principal)
+}
+
+.container__aviso {
+    font-size: 12px;
+    color: var(--cinza-secundario);
+}
+
+.container__titulo {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.container__imagem {
+    /*A sequência valores abaixo é a seguinte: top(1em), rigth(0), bottom(2em) 
+    and left(0). Ou seja, funciona como um relógio no sentido horário*/
+    margin: 1em 0 2em 0;
+}
+
+.container__caixa {
+    margin: 0 6em;
+    /*Somente os dois quer dizer top and bottom / left and rigth*/
+}
