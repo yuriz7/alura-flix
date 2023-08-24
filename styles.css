@@ -12,6 +12,7 @@ que podem ser acessadas e utilizadas em todo o documento CSS.*/
     --botao-azul: #167BF7;
     --cor-de-fundo: #00030C;
     --fonte-principal: 'Inter';
+    --botao-azul-efeito: hwb(205 31% 5%);
 }
 
 body {
@@ -31,8 +32,10 @@ body {
     background-image: url("img/Background.png");
     background-repeat: no-repeat;
     background-size: contain;
-    align-items: center; /* Serve para alinhar os itens dentro de um container / section */
-    text-align: center; /* O text align funciona também para itens e não somente texto */
+    align-items: center;
+    /* Serve para alinhar os itens dentro de um container / section */
+    text-align: center;
+    /* O text align funciona também para itens e não somente texto */
 }
 
 .container {
@@ -77,4 +80,134 @@ body {
 .container__caixa {
     margin: 0 6em;
     /*Somente os dois quer dizer top and bottom / left and rigth*/
+}
+
+.container__secundario {
+    display: flex;
+    align-items: center;
+    margin: 3%;
+}
+
+.container__descricao {
+    display: flex;
+    flex-direction: column;
+    margin: 0 10em;
+}
+
+.secundario__imagem {
+    width: 50%;
+    height: 50%;
+}
+
+.descricao__titulo {
+    font-weight: 700;
+    font-size: 48px;
+    color: var(--branco-principal);
+    margin-bottom: 0.3em;
+}
+
+.descricao__texto {
+    color: var(--cinza-secundario);
+}
+
+.container__terceiro {
+    display: flex;
+    align-items: center;
+    margin: 0 4em;
+}
+
+.container__telas {
+    display: flex;
+    flex-direction: column;
+    width: 588px;
+    height: 144px;
+    gap: 16px;
+}
+
+.container__botao__telas {
+    background-color: var(--botao-azul);
+    border-radius: 5px;
+    width: 160px;
+    height: 45px;
+    color: var(--branco-principal);
+    text-decoration: none;
+    text-align: center;
+    align-content: center;
+    padding-top: 20px;
+}
+
+.terceira__imagem {
+    align-items: center;
+    padding-left: 15%;
+}
+
+.container__quarto {
+    display: flex;
+    align-items: center;
+    margin: 15% 10% 15% 10%;
+    gap: 45px;
+}
+
+.container__notebook {
+    display: flex;
+    flex-direction: column;
+}
+
+.dispositivos__lista {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 5em 0;
+}
+
+.dispositivos {
+    text-align: center;
+    font-size: 32px;
+    color: var(--branco-principal);
+}
+
+.dispositivos__titulo {
+    text-align: center;
+    font-size: 48px;
+    color: var(--branco-principal);
+}
+
+.rodape__logo {
+    align-items: center;
+}
+
+.rodape__lista {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-evenly;
+    margin-bottom: 3em;
+}
+
+.link {
+    color: var(--branco-principal);
+    text-decoration: none;
+}
+
+.div__footer {
+    text-align: center;
+}
+
+.rodape__logo {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-bottom: 5%;
+    margin-top: 5%;
+}
+
+.rodape {
+    padding: 5%;
+}
+
+.link:hover {
+    color: var(--botao-azul);
+}
+
+.link:active{
+    color: purple;
 }
